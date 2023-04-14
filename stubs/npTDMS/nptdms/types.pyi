@@ -1,5 +1,5 @@
 from _typeshed import Incomplete
-from typing import Any, Union
+from typing import Any, Union, Self
 
 import numpy as np
 
@@ -16,7 +16,7 @@ class TdmsType:
     value: Incomplete
     bytes: Incomplete
     def __init__(self) -> None: ...
-    def __eq__(self, other): ...
+    def __eq__(self, other: Incomplete) -> bool: ...
     @classmethod
     def read(cls, file: Any, endianness: str = ...) -> Any: ...
     @classmethod
